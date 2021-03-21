@@ -5,8 +5,8 @@ pragma solidity ^0.4.24;
 //
 // Symbol        : GAID
 // Name          : Gamonoid Token
-// Total supply  : 100000000
-// Decimals      : 2
+// Total supply  : 500000000
+// Decimals      : 3
 // Owner Account : 0xfe32a492ccd8CBf02334307862Bc3180A220f103
 //
 // Enjoy.
@@ -87,8 +87,8 @@ contract GAIDToken is ERC20Interface, SafeMath {
     constructor() public {
         symbol = "GAID";
         name = "Gamonoid Token";
-        decimals = 2;
-        _totalSupply = 100000;
+        decimals = 3;
+        _totalSupply = 500000000;
         balances[0xfe32a492ccd8CBf02334307862Bc3180A220f103] = _totalSupply;
         emit Transfer(address(0), 0xfe32a492ccd8CBf02334307862Bc3180A220f103, _totalSupply);
     }
